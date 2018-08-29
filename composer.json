@@ -9,5 +9,7 @@
             "email": "adiwidjaja@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "dnadesign/silverstripe-elemental": "^3.0"
+    }
 }
