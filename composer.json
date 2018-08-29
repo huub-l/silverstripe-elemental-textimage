@@ -1,0 +1,13 @@
+{
+    "name": "adiwidjaja/silverstripe-elemental-textimage",
+    "description": "TextImage Element for Silverstripe",
+    "type": "silverstripe-vendormodule",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Andy Adiwidjaja",
+            "email": "adiwidjaja@gmail.com"
+        }
+    ],
+    "require": {}
+}
