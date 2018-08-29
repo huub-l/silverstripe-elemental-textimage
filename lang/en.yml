@@ -1,0 +1,9 @@
+en:
+  ATW\ElementalTextImage\Models\ElementTextImage:
+    BlockType: 'Text/Image'
+    ContentLabel: 'Text/Image'
+    PLURALNAME: 'text/image elements'
+    PLURALS:
+      one: 'A text/image element'
+      other: '{count} text/image elements'
+    SINGULARNAME: 'text/image element'
