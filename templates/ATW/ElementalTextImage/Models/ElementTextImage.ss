@@ -1,4 +1,4 @@
-<section class="section section--textimage section--imageright">
+<section class="section section--textimage <% if $Style %>$CssStyle<% end_if %>">
     <div class="section_content">
         <% if $ShowTitle %>
             <h2>$Title</h2>

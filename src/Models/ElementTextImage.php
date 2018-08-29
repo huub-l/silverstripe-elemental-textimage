@@ -19,6 +19,10 @@ class ElementTextImage extends BaseElement
         'Image' => Image::class
     ];
 
+    private static $owns = [
+        'Image'
+    ];
+
     private static $table_name = 'ElementTextImage';
 
     private static $singular_name = 'text/image element';
