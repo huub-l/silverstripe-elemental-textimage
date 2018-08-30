@@ -2,7 +2,7 @@
 
 namespace ATW\ElementalTextImage\Models;
 
-use DNADesign\Elemental\Models\BaseElement;
+use ATW\ElementalBase\Models\BaseElement;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\Assets\Image;

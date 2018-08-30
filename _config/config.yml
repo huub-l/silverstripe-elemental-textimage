@@ -2,6 +2,6 @@
 Name: silverstripe-elemental-textimage
 ---
 ATW\ElementalTextImage\Models\ElementTextImage:
-  styles:
+  variants:
     section--imageright: 'Image right'
     section--imageleft: 'Image left'
