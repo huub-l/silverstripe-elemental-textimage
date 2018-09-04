@@ -11,7 +11,7 @@
     ],
     "require": {
         "dnadesign/silverstripe-elemental": "^3.0",
-        "silverstripe-elemental-base": "*"
+        "adiwidjaja/silverstripe-elemental-base": "*"
     },
     "repositories": [
         {
