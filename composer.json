@@ -18,5 +18,7 @@
             "type": "vcs",
             "url": "git@github.com:adiwidjaja/silverstripe-elemental-base.git"
         }
-    ]
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
