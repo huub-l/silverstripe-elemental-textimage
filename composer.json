@@ -6,12 +6,12 @@
     "authors": [
         {
             "name": "Huubl",
-            "email": "adiwidjaja@gmail.com"
+            "email": "contact@huublunter.nl"
         }
     ],
     "require": {
         "dnadesign/silverstripe-elemental": "^3.0",
-        "adiwidjaja/silverstripe-elemental-base": "*"
+        "huubl/silverstripe-elemental-base": "*"
     },
     "repositories": [
         {
