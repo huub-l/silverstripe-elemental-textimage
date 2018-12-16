@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "dnadesign/silverstripe-elemental": "^3.0",
+        "dnadesign/silverstripe-elemental": "^3.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
