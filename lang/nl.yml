@@ -1,0 +1,12 @@
+nl:
+  ATW\ElementalTextImage\Models\ElementTextImage:
+    BlockType: 'Tekst/Afbeelding'
+    ContentLabel: 'Tekst/Afbeelding'
+    PLURALNAME: 'Tekst/Afbeelding elementen'
+    PLURALS:
+      one: 'A Tekst/Afbeelding element'
+      other: '{count} Tekst/Afbeelding elementen'
+    SINGULARNAME: 'Tekst/Afbeelding element'
+  ATW\ElementalBase\Models\BaseElement:
+    VARIANT: "Variant"
+    CHOOSE_VARIANT: "Kies variant"

@@ -1,0 +1,17 @@
+{
+    "name": "huubl/silverstripe-elemental-textimage",
+    "description": "TextImage Element for Silverstripe",
+    "type": "silverstripe-vendormodule",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Huubl",
+            "email": "contact@huublunter.nl"
+        }
+    ],
+    "require": {
+        "dnadesign/silverstripe-elemental": "^3.0",
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

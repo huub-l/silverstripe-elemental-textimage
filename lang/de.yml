@@ -1,0 +1,18 @@
+de:
+  ATW\ElementalTextImage\Models\ElementTextImage:
+    BlockType: 'Text/Bild'
+    ContentLabel: 'Text/Bild'
+    PLURALNAME: 'Text/Bild Elemente'
+    PLURALS:
+      one: 'Ein Text/Bild Element'
+      other: '{count} Text/Bild Elemente'
+    SINGULARNAME: 'Text/Bild Element'
+    db_Image: 'Bild'
+  DNADesign\Elemental\Models\ElementContent:
+    BlockType: Text
+    ContentLabel: Text
+    PLURALNAME: 'Text Elemente'
+    PLURALS:
+      one: 'Ein Text Element'
+      other: '{count} Text Elemente'
+    SINGULARNAME: 'Text Element'
