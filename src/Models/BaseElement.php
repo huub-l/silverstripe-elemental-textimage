@@ -1,9 +1,9 @@
 <?php
 
-namespace ATW\ElementalBase\Models;
+namespace DNADesign\Elemental\Models;
 
 use DNADesign\Elemental\Forms\TextCheckboxGroupField;
-use DNADesign\Elemental\Models\BaseElement as ElementalBase;
+use DNADesign\Elemental\Models\BaseElement;
 use SilverStripe\Core\Config\ConfigLoader;
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\CheckboxSetField;
@@ -11,7 +11,7 @@ use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
 
-class BaseElement extends ElementalBase
+class ElementalBase extends BaseElement
 {
     private static $description = 'Base element class';
 

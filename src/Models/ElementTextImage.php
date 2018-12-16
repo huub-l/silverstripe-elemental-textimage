@@ -1,8 +1,10 @@
 <?php
 
-namespace ATW\ElementalTextImage\Models;
+namespace huubl\ElementalTextImage\Models;
 
-use ATW\ElementalBase\Models\BaseElement;
+use DNADesign\Elemental\Models;
+use DNADesign\Elemental\Models\BaseElement;
+use huubl\Elemental\Models\Base;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\Assets\Image;

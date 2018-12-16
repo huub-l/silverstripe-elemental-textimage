@@ -1,7 +1,7 @@
 ---
 Name: silverstripe-elemental-textimage
 ---
-ATW\ElementalTextImage\Models\ElementTextImage:
+huubl\ElementalTextImage\Models\ElementTextImage:
   variants:
     section--imageright: 'Image right'
     section--imageleft: 'Image left'
