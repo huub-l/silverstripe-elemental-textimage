@@ -1,6 +1,6 @@
 <section class="d-md-flex flex-md-equal w-100 $VariantClasses" id="$Anchor">
   <div class="bg-light text-center overflow-hidden">
-      $Image.ResponsiveSet2
+      $Image
     <%--<% with $Image %><img class="img-fluid img-fit" src="{$URL}" title="{$Up.Title}"><% end_with %>--%>
   </div>
   <div class="bg-primary d-flex">
