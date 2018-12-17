@@ -5,3 +5,15 @@ huubl\ElementalTextImage\Models\ElementTextImage:
   variants:
     section--imageright: 'Image right'
     section--imageleft: 'Image left'
+---
+Name: myelements
+After: silverstripe-elemental-textimage
+---
+Page:
+  extensions:
+    - Huubl\ElementalBase\Extensions\ElementalPageExtension
+  Huubl\ElementalTextImage\Models\ElementTextImage:
+    variants:
+      imageleft: 'Image Left'
+      imageright: 'Image Right'
+    variants_name: 'Image direction'
