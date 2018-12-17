@@ -2,8 +2,8 @@
 
 namespace Huubl\ElementalTextImage\Models;
 
-use DNADesign\Elemental\Models\BaseElement;
-use DNADesign\Elemental\Models;
+//use DNADesign\Elemental\Models\BaseElement;
+use Huubl\ElementalBase\Models\BaseElement;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\Assets\Image;
