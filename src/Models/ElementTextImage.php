@@ -7,12 +7,25 @@ use SilverStripe\Forms\FieldList;
 use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\Assets\Image;
 
+
+use SilverStripe\ORM\DataExtension;
+use Heyday\ColorPalette\Fields\ColorPaletteField;
+use SilverStripe\Forms\CheckboxField;
+use SilverStripe\AssetAdmin\Forms\UploadField;
+
+use SilverStripe\Forms\DropdownField;
+use SilverStripe\Forms\Tab;
+use SilverStripe\Forms\TabSet;
+use SilverStripe\Forms\TextField;
+use SilverStripe\Core\Config\Configurable;
+
 class ElementTextImage extends BaseElement
 {
     private static $icon = 'font-icon-block-content';
 
     private static $db = [
-        'Text' => 'HTMLText'
+        'Text' => 'HTMLText',
+        'ImagePosition' => 'Enum("right,left","right")'
     ];
 
     private static $has_one = [
@@ -39,11 +52,24 @@ class ElementTextImage extends BaseElement
     public function getCMSFields()
     {
         $this->beforeUpdateCMSFields(function (FieldList $fields) {
-            $fields
-                ->fieldByName('Root.Main.Text')
-                ->setTitle(_t(__CLASS__ . '.ContentLabel', 'Content'));
+            $fields->fieldByName('Root.Main.Text')->setTitle(_t(__CLASS__ . '.ContentLabel', 'Content'));
+
+
         });
+
+//        $ImageField->setFolderName('Uploads/Omslagfotos');
+//        $ImageField->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
+//        $ImageField->setDescription('<a href="https://crop.exigent.nl/?width=100&height=100" target="_blank">??px x ??px</a>');
+
         return parent::getCMSFields();
+    }
+
+    public function updateCMSFields(FieldList $fields)
+    {
+
+        $fields->removeByName('ImagePosition');
+        DropdownField::create('ImagePosition', 'ImagePosition', $this->owner->dbObject('ImagePosition')->enumValues(),'right');
+
     }
 
     public function getSummary()
