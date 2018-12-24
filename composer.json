@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "dnadesign/silverstripe-elemental": "*"
+        "dnadesign/silverstripe-elemental": "*",
         "huubl/silverstripe-elemental-base": "*"
     },
     "minimum-stability": "dev",
