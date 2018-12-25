@@ -12,13 +12,13 @@
     "require": {
         "dnadesign/silverstripe-elemental": "*",
         "huubl/silverstripe-elemental-base": "*",
-        "heyday/silverstripe-responsive-images": "master",
+        "heyday/silverstripe-responsive-images": "dev-master",
         "jonom/focuspoint": "^3.0"
     },
         "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/dnadesign/silverstripe-responsive-images.git"
+            "url": "https://github.com/huubl/silverstripe-responsive-images.git"
         }
     ],
     "minimum-stability": "dev",
