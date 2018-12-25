@@ -5,7 +5,8 @@
     <% if $ImagePosition == 'left' %>
       <div class="text-center overflow-hidden" style="flex-basis: 50%;">
           <%--$Image--%>
-        <% with $Image %><img class="img-fluid img-fit" src="{$URL}" title="{$Up.Title}"><% end_with %>
+          $Image.FocusFill(500, 200).ResponsiveTextImage1
+        <%--<% with $Image %><img class="img-fluid img-fit" src="{$URL}" title="{$Up.Title}"><% end_with %>--%>
       </div>
     <% end_if %>
 
@@ -23,8 +24,8 @@
 
     <% if $ImagePosition == 'right' %>
         <div class="text-center overflow-hidden" style="flex-basis: 50%;">
-            <%--$Image--%>
-            <% with $Image %><img class="img-fluid img-fit" src="{$URL}" title="{$Up.Title}"><% end_with %>
+            <%--$Image--%> $Image.FocusFill(500, 200).ResponsiveTextImage1
+            <%--<% with $Image %><img class="img-fluid img-fit" src="{$URL}" title="{$Up.Title}"><% end_with %>--%>
         </div>
     <% end_if %>
 
