@@ -11,7 +11,9 @@
     ],
     "require": {
         "dnadesign/silverstripe-elemental": "*",
-        "huubl/silverstripe-elemental-base": "*"
+        "huubl/silverstripe-elemental-base": "*",
+        "heyday/silverstripe-responsive-images": "^2.0",
+        "jonom/focuspoint": "^3.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
