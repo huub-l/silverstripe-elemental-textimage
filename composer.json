@@ -12,7 +12,7 @@
     "require": {
         "dnadesign/silverstripe-elemental": "*",
         "huubl/silverstripe-elemental-base": "*",
-        "heyday/silverstripe-responsive-images": "dev-master",
+        "heyday/silverstripe-responsive-images": "master",
         "jonom/focuspoint": "^3.0"
     },
         "repositories": [
