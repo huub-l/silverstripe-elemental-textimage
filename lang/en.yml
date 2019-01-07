@@ -1,5 +1,5 @@
 en:
-  ATW\ElementalTextImage\Models\ElementTextImage:
+  Huubl\ElementalTextImage\Models\ElementTextImage:
     BlockType: 'Text/Image'
     ContentLabel: 'Text/Image'
     PLURALNAME: 'text/image elements'
@@ -7,6 +7,6 @@ en:
       one: 'A text/image element'
       other: '{count} text/image elements'
     SINGULARNAME: 'text/image element'
-  ATW\ElementalBase\Models\BaseElement:
+  Huubl\ElementalBase\Models\BaseElement:
     VARIANT: "Variant"
     CHOOSE_VARIANT: "Choose variant"

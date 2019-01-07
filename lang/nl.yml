@@ -1,5 +1,5 @@
 nl:
-  ATW\ElementalTextImage\Models\ElementTextImage:
+  Huubl\ElementalTextImage\Models\ElementTextImage:
     BlockType: 'Tekst/Afbeelding'
     ContentLabel: 'Tekst/Afbeelding'
     PLURALNAME: 'Tekst/Afbeelding elementen'
@@ -9,6 +9,6 @@ nl:
     SINGULARNAME: 'Tekst/Afbeelding element'
     VARIANT: "Variant"
     CHOOSE_VARIANT: "Kies variant"
-  ATW\ElementalBase\Models\BaseElement:
+  Huubl\ElementalBase\Models\BaseElement:
     VARIANT: "Variant"
     CHOOSE_VARIANT: "Kies variant"

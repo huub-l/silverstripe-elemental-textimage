@@ -24,8 +24,7 @@
 
     <% if $ImagePosition == 'right' %>
         <div class="text-center overflow-hidden ti" style="max-height: 450px;">
-            <%--$Image--%>
-            $Image.FocusFill(1800, 1400).ResponsiveTextImage
+            <%--$Image--%> $Image.FocusFill(1800, 1400).ResponsiveTextImage
             <%--<% with $Image %><img class="img-fluid img-fit" src="{$URL}" title="{$Up.Title}"><% end_with %>--%>
         </div>
     <% end_if %>

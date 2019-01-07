@@ -1,5 +1,5 @@
 de:
-  ATW\ElementalTextImage\Models\ElementTextImage:
+  Huubl\ElementalTextImage\Models\ElementTextImage:
     BlockType: 'Text/Bild'
     ContentLabel: 'Text/Bild'
     PLURALNAME: 'Text/Bild Elemente'
