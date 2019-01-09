@@ -3,10 +3,11 @@
 
 
     <% if $ImagePosition == 'left' %>
-      <div class="text-center overflow-hidden ti" style="max-height: 450px;">
-          <%--$Image--%>
-          $Image.FocusFill(1800, 1400).ResponsiveTextImage
-        <%--<% with $Image %><img class="img-fluid img-fit" src="{$URL}" title="{$Up.Title}"><% end_with %>--%>
+      <div class="text-center  ti">
+          <div class="img-wrap">
+              <%--$Image--%> $Image.FocusFill(1800, 1400).ResponsiveTextImage
+              <%--<% with $Image %><img class="img-fluid img-fit" src="{$URL}" title="{$Up.Title}"><% end_with %>--%>
+          </div>
       </div>
     <% end_if %>
 
@@ -15,28 +16,51 @@
       <div class="col-xl-20">
                <% if $ShowTitle %>
            <h4 class="text-white"> $Title</h4>
+                   <hr>
         <% end_if %>
-        <hr>
-        <div class="mb-0 text-white">$Text</div>
+
+        <div class="mb-0 text-white section-content">$Text</div>
       </div>
     </div>
   </div>
 
     <% if $ImagePosition == 'right' %>
-        <div class="text-center overflow-hidden ti" style="max-height: 450px;">
+        <div class="text-center  ti">
+            <div class="img-wrap">
             <%--$Image--%> $Image.FocusFill(1800, 1400).ResponsiveTextImage
             <%--<% with $Image %><img class="img-fluid img-fit" src="{$URL}" title="{$Up.Title}"><% end_with %>--%>
+            </div>
         </div>
     <% end_if %>
 
 </section>
 
 <style>
-    .ti{
-        flex: 1 1 100%;
+
+    .img-wrap{
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
 
     }
+    .ti{
+        flex: 1 1 100%;
+    }
+
+    .ti img{
+        flex: 1 1 100%;
+        height: 100%;
+        /*max-height: fit-content;*/
+        width: 100%;
+    }
     @media (min-width: 768px){
+        .ti img{
+            position: absolute;
+            left: 0;
+        }
         .ti{
             flex-basis: 50%;
 
