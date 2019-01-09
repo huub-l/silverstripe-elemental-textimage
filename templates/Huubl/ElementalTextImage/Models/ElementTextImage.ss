@@ -1,34 +1,78 @@
-<section class="d-flex flex-column flex-md-row flex-md-equal w-100 p-0" id="$Anchor" <% if $AOSEffect != "---" %> data-aos="$AOSEffect" <% end_if %> Style="overflow: hidden; <% if $EnableBackgroundColour %>background-color: {$BackgroundColour};<% end_if %><% if $BackgroundImage %>background-image:url($BackgroundImage.URL);background-repeat: no-repeat;background-size: cover;<% end_if %>background-position: $BackgroundPosition;<% if $BackgroundParalax %>background-attachment: fixed;<% end_if %><% if $MarginTop %>margin-top: 35px;<% end_if %><% if $MarginBottom %>margin-bottom: 35px;<% end_if %><% if $AddBorderBottom %>border-bottom-color:$BorderBottomColour;border-bottom-style:solid;border-bottom-width:1px;<% end_if %><% if $RemoveTopPadding %>padding-top:0px;<% end_if %><% if $RemoveBottomPadding %>padding-bottom:0px;<% end_if %>">
+<section class="element-text-image d-flex flex-column flex-md-row flex-md-equal w-100 p-0"
+         id="$Anchor" <% if $AOSEffect != "---" %> data-aos="$AOSEffect" <% end_if %>
+         Style="overflow: hidden; <% if $EnableBackgroundColour %>background-color: {$BackgroundColour};<% end_if %><% if $BackgroundImage %>background-image:url($BackgroundImage.URL);background-repeat: no-repeat;background-size: cover;<% end_if %>background-position: $BackgroundPosition;<% if $BackgroundParalax %>background-attachment: fixed;<% end_if %><% if $MarginTop %>margin-top: 35px;<% end_if %><% if $MarginBottom %>margin-bottom: 35px;<% end_if %><% if $AddBorderBottom %>border-bottom-color:$BorderBottomColour;border-bottom-style:solid;border-bottom-width:1px;<% end_if %><% if $RemoveTopPadding %>padding-top:0px;<% end_if %><% if $RemoveBottomPadding %>padding-bottom:0px;<% end_if %>">
     <%--$Me.BackgroundColour--%>
 
 
     <% if $ImagePosition == 'left' %>
-      <div class="text-center  ti">
-          <div class="img-wrap">
-              <%--$Image--%> $Image.FocusFill(1800, 1400).ResponsiveTextImage
-              <%--<% with $Image %><img class="img-fluid img-fit" src="{$URL}" title="{$Up.Title}"><% end_with %>--%>
-          </div>
-      </div>
+        <div class="text-center  ti">
+            <div class="img-wrap">
+                <%--$Image.FocusFill(1800, 800).ResponsiveTextImage--%>
+
+                <picture>
+                    <source
+                        media="(min-width: 1600px)"
+                        srcset="$Image.FocusFill(1000, 800).Url,
+                                        $Image.FocusFill(2000, 1600).Url 2x">
+                    <source
+                        media="(min-width: 1080px)"
+                        srcset="$Image.FocusFill(1080, 600).Url,
+                                        $Image.FocusFill(1600, 1200).Url 2x">
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="$Image.FocusFill(600, 1080).Url,
+                                        $Image.FocusFill(2160,700).Url 2x">
+                    <source
+                        media="(max-width: 768px)"
+                        srcset="$Image.FocusFill(600, 400).Url,
+                                        $Image.FocusFill(1200, 800).Url 2x">
+                    <img
+                        src="$Image.FocusFill(1000, 800).Url"
+                        alt="$Title" class="img-fit">
+                </picture>
+                <%--<% with $Image %><img class="img-fluid img-fit" src="{$URL}" title="{$Up.Title}"><% end_with %>--%>
+            </div>
+        </div>
     <% end_if %>
 
-  <div class="d-flex align-items-center justify-content-center ti">
-    <div class="row align-items-center justify-content-center align-self-stretch p-5">
-      <div class="col-xl-20">
-               <% if $ShowTitle %>
-           <h4 class="text-white"> $Title</h4>
-                   <hr>
-        <% end_if %>
-
-        <div class="mb-0 text-white section-content">$Text</div>
-      </div>
+    <div class="d-flex align-items-center justify-content-center ti">
+        <div class="container">
+            <div class="row align-items-center justify-content-center align-self-stretch">
+                <div class="col-22 col-md-22 mx-auto section-content">
+                    <% if $ShowTitle %>
+                        <h4 class="text-white"> $Title</h4>
+                        <hr>
+                    <% end_if %>
+                    <div class="text-white">$Text</div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
     <% if $ImagePosition == 'right' %>
         <div class="text-center  ti">
             <div class="img-wrap">
-            <%--$Image--%> $Image.FocusFill(1800, 1400).ResponsiveTextImage
-            <%--<% with $Image %><img class="img-fluid img-fit" src="{$URL}" title="{$Up.Title}"><% end_with %>--%>
+                <picture>
+                    <source
+                        media="(min-width: 1600px)"
+                        srcset="$Image.FocusFill(1200, 700).Url,
+                                        $Image.FocusFill(2400, 1400).Url 2x">
+                    <source
+                        media="(min-width: 1080px)"
+                        srcset="$Image.FocusFill(1080, 600).Url,
+                                        $Image.FocusFill(1600, 1200).Url 2x">
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="$Image.FocusFill(600, 1080).Url,
+                                        $Image.FocusFill(2160,700).Url 2x">
+                    <source
+                        media="(max-width: 768px)"
+                        srcset="$Image.FocusFill(600, 400).Url,
+                                        $Image.FocusFill(1200, 800).Url 2x">
+                    <img
+                        src="$Image.FocusFill(1000, 800).Url"
+                        alt="$Title" class="img-fit">
+                </picture>
             </div>
         </div>
     <% end_if %>
@@ -37,7 +81,7 @@
 
 <style>
 
-    .img-wrap{
+    .img-wrap {
         position: relative;
         height: 100%;
         display: flex;
@@ -46,22 +90,25 @@
         width: 100%;
 
     }
-    .ti{
-        flex: 1 1 100%;
+
+    .ti {
+        flex: 1 1 auto;
     }
 
-    .ti img{
-        flex: 1 1 100%;
+    .ti img {
+        flex: 1 1 auto;
         height: 100%;
-        /*max-height: fit-content;*/
+        max-height: fit-content;
         width: 100%;
     }
-    @media (min-width: 768px){
-        .ti img{
+
+    @media (min-width: 768px) {
+        .ti img {
             position: absolute;
             left: 0;
         }
-        .ti{
+
+        .ti {
             flex-basis: 50%;
 
         }
