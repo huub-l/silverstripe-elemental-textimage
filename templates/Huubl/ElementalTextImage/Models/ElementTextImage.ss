@@ -38,7 +38,7 @@
     <div class="d-flex align-items-center justify-content-center ti">
         <div class="container">
             <div class="row align-items-center justify-content-center align-self-stretch">
-                <div class="col-22 col-md-22 mx-auto section-content">
+                <div class="col-22 col-xl-16 mx-auto section-content">
                     <% if $ShowTitle %>
                         <h4 class="text-white"> $Title</h4>
                         <hr>
@@ -91,26 +91,32 @@
 
     }
 
-    .ti {
-        flex: 1 1 auto;
-    }
+    @media (max-width: 768px) {
+        .ti {
+            flex: 1 1 auto;
+        }
 
-    .ti img {
-        flex: 1 1 auto;
-        height: 100%;
-        max-height: fit-content;
-        width: 100%;
+        .ti img {
+            flex: 1 1 auto;
+            height: 100%;
+            max-height: fit-content;
+            width: 100%;
+        }
     }
 
     @media (min-width: 768px) {
-        .ti img {
-            position: absolute;
-            left: 0;
-        }
-
         .ti {
             flex-basis: 50%;
+        }
+        .ti img {
+            max-height: fit-content;
+            min-height: -webkit-fill-available;
+            position: absolute;
 
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
         }
     }
 </style>
