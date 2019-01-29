@@ -1,11 +1,13 @@
-<section class="element-text-image d-flex flex-column flex-md-row flex-md-equal w-100 p-0"
+
+
+<div class="element-text-image d-flex flex-column flex-md-row flex-md-equal w-100 p-0 bg-"
          id="$Anchor" <% if $AOSEffect != "---" %> data-aos="$AOSEffect" <% end_if %>
          Style="overflow: hidden; <% if $EnableBackgroundColour %>background-color: {$BackgroundColour};<% end_if %><% if $BackgroundImage %>background-image:url($BackgroundImage.URL);background-repeat: no-repeat;background-size: cover;<% end_if %>background-position: $BackgroundPosition;<% if $BackgroundParalax %>background-attachment: fixed;<% end_if %><% if $MarginTop %>margin-top: 35px;<% end_if %><% if $MarginBottom %>margin-bottom: 35px;<% end_if %><% if $AddBorderBottom %>border-bottom-color:$BorderBottomColour;border-bottom-style:solid;border-bottom-width:1px;<% end_if %><% if $RemoveTopPadding %>padding-top:0px;<% end_if %><% if $RemoveBottomPadding %>padding-bottom:0px;<% end_if %>">
     <%--$Me.BackgroundColour--%>
 
 
     <% if $ImagePosition == 'left' %>
-        <div class="text-center  ti">
+        <div class="text-center ti order-2 order-md-1">
             <div class="img-wrap">
                 <%--$Image.FocusFill(1800, 800).ResponsiveTextImage--%>
 
@@ -35,12 +37,12 @@
         </div>
     <% end_if %>
 
-    <div class="d-flex align-items-center justify-content-center ti">
+    <div class="d-flex align-items-center justify-content-center ti order-1 order-md-2">
         <div class="container">
             <div class="row align-items-center justify-content-center align-self-stretch">
                 <div class="col-22 col-xl-16 mx-auto section-content">
                     <% if $ShowTitle %>
-                        <h4 class="text-white"> $Title</h4>
+                        <h2 class="text-white h4"> $Title</h2>
                         <hr>
                     <% end_if %>
                     <div class="text-white">$Text</div>
@@ -50,7 +52,7 @@
     </div>
 
     <% if $ImagePosition == 'right' %>
-        <div class="text-center  ti">
+        <div class="text-center ti order-1 order-md-3">
             <div class="img-wrap">
                 <picture>
                     <source
@@ -77,7 +79,7 @@
         </div>
     <% end_if %>
 
-</section>
+</div>
 
 <style>
 

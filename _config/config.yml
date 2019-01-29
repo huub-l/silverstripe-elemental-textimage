@@ -1,20 +1,24 @@
 ---
 Name: silverstripe-elemental-textimage
+After:
+  - 'huubl-elemental-base/*'
 ---
+Huubl\ElementalBase\Extensions\BaseElementExt:
+  padding: 'test'
 
----
-After: 'silverstripe-responsive-images/*'
----
-Heyday\ResponsiveImages\ResponsiveImageExtension:
-  sets:
-    ResponsiveTextImage:
-      css_classes: img-fit
-      method: Fill
-      arguments:
-        '(min-width: 1280px) and (min-device-pixel-ratio: 2.0)': [1800, 1400]
-        '(min-width: 1280px)': [1200, 1000]
-        '(min-width: 800px) and (min-device-pixel-ratio: 2.0)': [1600, 1200]
-        '(min-width: 800px)': [800, 600]
-        '(min-width: 400px) and (min-device-pixel-ratio: 2.0)': [1200, 800]
-        '(min-width: 400px)': [600, 400]
-      default_arguments: [1200, 800]
+#---
+#After: 'silverstripe-responsive-images/*'
+#---
+#Heyday\ResponsiveImages\ResponsiveImageExtension:
+#  sets:
+#    ResponsiveTextImage:
+#      css_classes: img-fit
+#      method: Fill
+#      arguments:
+#        '(min-width: 1280px) and (min-device-pixel-ratio: 2.0)': [1800, 1400]
+#        '(min-width: 1280px)': [1200, 1000]
+#        '(min-width: 800px) and (min-device-pixel-ratio: 2.0)': [1600, 1200]
+#        '(min-width: 800px)': [800, 600]
+#        '(min-width: 400px) and (min-device-pixel-ratio: 2.0)': [1200, 800]
+#        '(min-width: 400px)': [600, 400]
+#      default_arguments: [1200, 800]

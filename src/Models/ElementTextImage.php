@@ -23,6 +23,8 @@ class ElementTextImage extends BaseElement
 {
     private static $icon = 'font-icon-block-content';
 
+    public static $np = 'p-0';
+
     private static $db = [
         'Text' => 'HTMLText',
         'ImagePosition' => 'Enum("right,left","right")'
@@ -53,13 +55,7 @@ class ElementTextImage extends BaseElement
     {
         $this->beforeUpdateCMSFields(function (FieldList $fields) {
             $fields->fieldByName('Root.Main.Text')->setTitle(_t(__CLASS__ . '.ContentLabel', 'Content'));
-
-
         });
-
-//        $ImageField->setFolderName('Uploads/Omslagfotos');
-//        $ImageField->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
-//        $ImageField->setDescription('<a href="https://crop.exigent.nl/?width=100&height=100" target="_blank">??px x ??px</a>');
 
         return parent::getCMSFields();
     }
@@ -81,4 +77,5 @@ class ElementTextImage extends BaseElement
     {
         return _t(__CLASS__ . '.BlockType', 'Text/Image');
     }
+
 }
