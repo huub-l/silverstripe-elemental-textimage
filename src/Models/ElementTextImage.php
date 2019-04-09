@@ -21,6 +21,9 @@ use SilverStripe\Core\Config\Configurable;
 
 class ElementTextImage extends BaseElement
 {
+
+    private static $inline_editable = false;
+
     private static $icon = 'font-icon-block-content';
 
     public static $np = 'p-0';
